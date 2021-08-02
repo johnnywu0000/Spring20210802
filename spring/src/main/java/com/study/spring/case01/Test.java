@@ -10,13 +10,13 @@ public class Test {
 		person.setId(1);
 		person.setName("Spring");
 		System.out.println(person);
-		
+
 //		Spring
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Person person2 = (Person)ctx.getBean("person");
+		Person person2 = (Person) ctx.getBean("person");
 		person2.setId(2);
 		person2.setName("Mary");
 		System.out.println(person2);
 	}
-	
+
 }
